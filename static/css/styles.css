@@ -1,0 +1,126 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+#contents {
+    max-width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#GeneratedKeywordsDiv {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 4px;
+}
+
+.keywordItem {
+    display: inline-block;
+    padding: 5px;
+    margin: 4px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.keywordItem.red {
+    background-color: #ff3333;
+    color: #fff;
+}
+
+.keywordItem.green {
+    background-color: #33cc33;
+    color: #333;
+}
+
+.keywordItem.yellow {
+    background-color: #ffcc00;
+    color: #333;
+}
+
+.keywordItem.grey {
+    background-color: #333;
+    color: #fff;
+}
+
+.stats {
+    background-color: #fff; /* White background */
+    padding: 5px;
+    margin-left: 6px;
+    border-radius: 8px;
+    display: inline-block;
+    color: #333; /* Black text color for stats */
+}
+
+#loadingContainer {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+#loadingGif {
+    width: 50px; /* Adjust the size as needed */
+    height: 50px;
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
