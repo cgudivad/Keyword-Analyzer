@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyword Analyzer</title>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            generatedKeywordsDiv = document.getElementById('GeneratedKeywordsDiv');
+            if (generatedKeywordsDiv.innerHTML.trim() !== '') {
+                generatedKeywordsDiv.style.display = 'block';
+                $('html, body').animate({
+                    scrollTop: $('#GeneratedKeywordsDiv').offset().top
+                }, 1500);
+            }
+
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <h2>Keyword Analyzer</h2>
+
+    <div id="contents">
+
+        <form id="myForm" action="/" method="POST" enctype="multipart/form-data">
+
+            <B>URL</B>
+            <input type="text" id="url" name="url" value={{url}}>
+            <br>
+
+            <B>Blog</B>
+            <textarea id="blog" name="blog" rows="10" cols="50">{{blog}}</textarea>
+            <br>
+
+            <B>Keywords</B>
+            <input type="text" id="input_keywords" name="input_keywords" value={{input_keywords}}>
+
+            <div id="buttons">
+                <input type="submit" value="Generate Keywords" name="action" id="Generate Keywords">
+            </div>
+
+            {% if error_message %}
+            <br>
+            <div class="alert alert-danger" role="alert">
+                {{ error_message }}
+            </div>
+            {% endif %}
+
+            <div id='GeneratedKeywordsDiv'>
+
+                {{beautified_keywords | safe}}
+
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
