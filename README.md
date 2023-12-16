@@ -21,3 +21,18 @@ Clone the repository and modify API keys in **api_keys.py** file and run **app.p
 **NOTE:** Additionally, you can also provide few keywords from the blog as an input, to perform analysis only for those specific keywords instead of the whole blog (which is a lot faster than the whole blog analysis).
 
 ![image](https://github.com/cgudivad/Keyword-Analyzer/assets/126507537/4d2a8a05-a699-455b-ae91-65c80bb0a546)
+
+**Requirements:**
+
+![image](https://github.com/cgudivad/Keyword-Analyzer/assets/126507537/9a335a98-46d2-44aa-b027-0c8e3bca414a)
+
+**Tech Stack:**
+
+![image](https://github.com/cgudivad/Keyword-Analyzer/assets/126507537/3d4d9cf8-2636-4940-a623-987aa5f6a697)
+
+**WorkFlow:**
+
+![image](https://github.com/cgudivad/Keyword-Analyzer/assets/126507537/eab9ddae-8c18-418d-b392-d0f3f6d8d6cd)
+
+
+
